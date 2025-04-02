@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  myapp:
+    container_name: myapp
+    image: myapp:1.0.0
+    build: .
+    ports:
+      - 3000:3000   # port 3000 of the container will be exposed on port 3000 of the host machine.
